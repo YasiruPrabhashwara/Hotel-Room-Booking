@@ -1,0 +1,244 @@
+@font-face{
+    font-family: "uni";
+    src: url(fonts/Univers\ LT\ Std\ 45\ Light.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "uni";
+    color: rgb(0, 0, 0);
+}
+
+header{
+    margin: none;
+    padding: none;
+    background-color: rgb(164, 176, 5);
+    height: 54px;
+    display: flex;
+    justify-content: right;
+    width:100%;
+   
+}
+
+.logo-container{
+    display: block;
+    height: 30px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: right;
+    margin-left: 93%;
+    width: 5%;
+}
+.h-logo{
+    padding-top: 10px;
+    height: 35px;
+}
+.nav-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 150px;
+    padding-top: 19px;
+    transition: all 0.5s;
+}
+/*-------------------------------------- navigation bar-------------------------- */
+.nav{
+    display: flex;
+    height: 64px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(247, 237, 237);
+    
+}
+.fixed-nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: -10px;
+}
+
+.nav-container{
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+ul{
+    list-style: none;
+}
+
+.item{
+    width: 142px;
+    height: 42px;
+    padding-top: 21px;
+    padding-left: 10px;
+    margin-top: -14px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+}
+
+a{
+    text-decoration: none;
+}
+.item:hover{
+    background-color: rgb(200, 194, 194);
+}
+.nav-container li a{
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-container li .dropdown{
+    position: relative;
+    top: 23px;
+    background-color: rgb(247, 237, 237);
+    width: 200px;
+    height: auto;
+    visibility: hidden;
+    opacity: 0;
+    cursor: default;
+    border-radius:0px 0px 10px 10px;
+    
+}
+
+.nav-container li .dropdown a{
+    display: block;
+    font-size: 0.9rem;
+    text-align: left;
+    position: relative;
+    line-height: 40px;
+    padding-left: 10px;
+    width: auto;    
+    font-family: "Playfair+Display";
+    font-size: 1rem;
+    font-weight: normal;
+}
+.nav-container li .dropdown a:hover{
+    color: brown;
+    background-color: rgb(211, 186, 186);
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.nav-container li:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.restaurant-logo{
+    width: 70px;
+    height: 63px;
+    margin-top: -14px;
+    margin-left: -16px;
+}
+.search-logo{
+    height: 25px;
+    mix-blend-mode: multiply;
+}
+.sign-in-btn{
+    background-color: rgba(55, 85, 225, 0);
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.15rem;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -18px;
+}
+.sign-in-btn:hover{
+    background-color: rgba(55, 85, 225, 0.7);
+    
+}
+button,.item,.search-logo:hover{
+    cursor: pointer;
+    
+}
+
+/*-------------------------------------------- FOOTER HTML'S CSS------------------------------ */
+footer {
+    background-color: rgb(164, 176, 5);
+    height: auto;
+    margin-top: 50px;
+    color: rgb(26, 83, 182);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer img{
+    width: 150px;
+    margin-left: 20px;
+}
+.det{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.det h3{
+    margin-bottom: 10px;
+}
+.qr{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.qr h3{
+    font-size: 0.8rem;
+    margin-left: 20px;
+    color: rgb(205, 44, 36);
+}
+.f1{
+    display: flex;
+}
+.f2{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.f , .t{
+    text-align: center;
+}
+.f{
+    padding-top: 20px;
+}
+.t{
+    padding-bottom: 10px;
+}
+.btn {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+.btn-show{
+    visibility: visible;
+    opacity: 1;
+}
+.btn img{
+    width: 50px;
+}
+    
+.btn img:hover{
+    cursor: pointer;
+}
+.hr{
+    width: 2px;
+    height: auto;
+    background-color: #595353;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
